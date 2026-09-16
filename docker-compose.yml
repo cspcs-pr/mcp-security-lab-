@@ -1,0 +1,19 @@
+# docker-compose do MCP Security Lab (uso educacional)
+services:
+  tests:
+    build: .
+    environment:
+      # Em producao, use um gestor de segredos (ex.: Vault), nunca valores fixos.
+      MCP_HMAC_SECRET: "segredo-de-desenvolvimento"
+      APP_API_KEY: "chave-de-desenvolvimento"
+    command: ["python", "-m", "pytest", "-q"]
+
+  secure-server:
+    build: .
+    environment:
+      MCP_HMAC_SECRET: "segredo-de-desenvolvimento"
+      APP_API_KEY: "chave-de-desenvolvimento"
+      MCP_DATA_DIR: "/app/data"
+    command: ["python", "-m", "secure_server.server"]
+    stdin_open: true
+    tty: true
