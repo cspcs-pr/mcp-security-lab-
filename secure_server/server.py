@@ -13,6 +13,7 @@ Uso:
 """
 
 import json
+import re
 import sys
 
 from secure_server import tools
@@ -28,10 +29,25 @@ TOOL_DESCRIPTIONS = {
 }
 
 
+# Comentarios HTML costumam esconder payloads em descricoes de tools
+_HTML_COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
+
+
 def _sanitize(text: str) -> str:
-    """Remove marcadores/instrucoes potencialmente maliciosas de descricoes."""
-    for bad in ("<!--", "-->", "IGNORE", "ignore instrucoes"):
-        text = text.replace(bad, "")
+    """Remove conteudo potencialmente malicioso de descricoes de tools.
+
+    Estrategia (mitiga #6):
+    - remove blocos de comentario HTML inteiros (nao so os marcadores);
+    - corta a descricao no primeiro gatilho de injecao conhecido, descartando
+      tudo a partir dele em vez de deixar residuo legivel pelo modelo.
+    """
+    text = _HTML_COMMENT.sub("", text)
+    lowered = text.lower()
+    for trigger in ("ignore", "disregard", "envie", "exfiltr"):
+        idx = lowered.find(trigger)
+        if idx != -1:
+            text = text[:idx]
+            lowered = text.lower()
     return text.strip()
 
 
