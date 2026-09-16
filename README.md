@@ -43,6 +43,13 @@ mcp-security-lab/
 | 5 | DevSecOps | .github/workflows/*.yml |
 | 6 | Supply chain | docs/capitulo-6.md |
 
+### 📚 Material de apoio
+
+- [Guia prático de testes](docs/guia-pratico.md) — roteiro passo a passo por vulnerabilidade
+- [Arquitetura e trust boundaries](docs/arquitetura.md) — diagrama do fluxo MCP
+- [Quiz de autoavaliação](docs/quiz.md) — perguntas e gabarito
+- [MCPs gratuitos](docs/mcps-gratuitos.md) — servidores open source para praticar
+
 ---
 
 ## 🔐 9 Vulnerabilidades × Mitigações
