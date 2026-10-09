@@ -36,15 +36,16 @@ mcp-security-lab/
 
 | Cap | Tema | Arquivo |
 |-----|------|---------|
-| 1 | Fundamentos MCP | client/client.py |
-| 2 | Ataques | attacks/*.py |
+| 1 | Fundamentos MCP | docs/capitulo-1.md · client/client.py |
+| 2 | Ataques | docs/capitulo-2.md · attacks/*.py |
 | 3 | Modelagem de ameaças | docs/capitulo-3.md |
-| 4 | Defesas | secure_server/*.py |
-| 5 | DevSecOps | .github/workflows/*.yml |
+| 4 | Defesas | docs/capitulo-4.md · secure_server/*.py |
+| 5 | DevSecOps | docs/capitulo-5.md · .github/workflows/*.yml |
 | 6 | Supply chain | docs/capitulo-6.md |
 
 ### 📚 Material de apoio
 
+- Capítulos: [1 — Fundamentos](docs/capitulo-1.md) · [2 — Ataques](docs/capitulo-2.md) · [3 — Modelagem de ameaças](docs/capitulo-3.md) · [4 — Defesas](docs/capitulo-4.md) · [5 — DevSecOps](docs/capitulo-5.md) · [6 — Supply chain](docs/capitulo-6.md)
 - [Guia prático de testes](docs/guia-pratico.md) — roteiro passo a passo por vulnerabilidade
 - [Arquitetura e trust boundaries](docs/arquitetura.md) — diagrama do fluxo MCP
 - [Quiz de autoavaliação](docs/quiz.md) — perguntas e gabarito
