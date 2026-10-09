@@ -88,3 +88,7 @@ gatilhos) elimina o payload por completo, não apenas uma palavra-chave.
 - Boundary Cliente↔Servidor: ataque = chamada sem autenticação; defesa = token HMAC obrigatório (#4).
 - Boundary Servidor↔Recursos: ataque = path traversal / command injection; defesa = `_safe_path` (#2) e `shlex`+`shell=False`+allowlist (#3).
 - Boundary Host/LLM↔Cliente: ataque = prompt injection / tool poisoning; defesa = sanitização de descrições (#6) e não expor prompts inseguros (#9).
+
+---
+
+_Última atualização: 8 de outubro de 2026._

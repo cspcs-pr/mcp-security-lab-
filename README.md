@@ -199,3 +199,7 @@ Uso exclusivamente educacional. O uso indevido pode configurar crime:
 
 Nunca execute os vetores em `attacks/` contra sistemas que você não possui
 ou para os quais não tem autorização escrita.
+
+---
+
+_Última atualização: 8 de outubro de 2026._

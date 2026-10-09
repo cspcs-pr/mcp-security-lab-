@@ -50,3 +50,7 @@ comprovar como e onde o artefato foi construído.
 2. Fixe todas as versões em `requirements.txt`.
 3. Configure um passo de assinatura no `ci.yml`.
 4. Descreva como você detectaria um rug pull em um servidor MCP de terceiros.
+
+---
+
+_Última atualização: 8 de outubro de 2026._

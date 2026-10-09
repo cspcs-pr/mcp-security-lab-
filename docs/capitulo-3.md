@@ -41,3 +41,7 @@ Trust boundaries (fronteiras de confiança):
 
 - IriusRisk — modelagem de ameaças assistida.
 - STRIDEGPT — geração de cenários STRIDE com IA.
+
+---
+
+_Última atualização: 8 de outubro de 2026._

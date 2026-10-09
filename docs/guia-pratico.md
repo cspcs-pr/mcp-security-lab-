@@ -128,3 +128,7 @@ docker compose run --rm secure-server
 
 Uso exclusivamente educacional. Nunca execute os vetores de `attacks/` contra
 sistemas que você não possui ou sem autorização por escrito.
+
+---
+
+_Última atualização: 8 de outubro de 2026._

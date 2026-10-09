@@ -58,3 +58,7 @@ flowchart LR
   controle nas fronteiras.
 - O **servidor seguro** aplica um controle específico em cada aresta B3, além de
   exigir autenticação em B2.
+
+---
+
+_Última atualização: 8 de outubro de 2026._

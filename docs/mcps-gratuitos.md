@@ -95,3 +95,7 @@ que ele faz.
 
 _Fontes: documentação oficial do Model Context Protocol. Conteúdo reescrito para
 conformidade com restrições de licença._
+
+---
+
+_Última atualização: 8 de outubro de 2026._
